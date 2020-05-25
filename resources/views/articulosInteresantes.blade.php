@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" xmlns="http://www.w3.org/1999/html">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,30 +62,35 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+        .navbar {
+            min-height: 80px;
+        }
 
     </style>
 </head>
-<body style=" background-color: lightgrey;">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">COOPER</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<body  background="{{url('imagenes/fondo.png')}}" style=" background-color: #ECE0E0;">
+<div class="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">COOPER</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Mas de mi</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link" href="{{route('articulosInteresantes')}}">Articulos Interesantes</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mas de mi</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="{{route('articulosInteresantes')}}">Articulos Interesantes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
 <div id ="pagina" class="container"><br>
     <div class="row">
         <div class="col-sm-6">
@@ -128,6 +133,7 @@
         </div>
     </div>
 </div>
+
 <main class="container-fluid">
     @yield('content')
 </main>
@@ -135,3 +141,5 @@
 
 </body>
 </html>
+
+
