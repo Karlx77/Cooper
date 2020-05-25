@@ -81,7 +81,7 @@
                     <a class="nav-link" href="#">Mas de mi</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">Articulos Interesantes</a>
+                    <a class="nav-link" href="{{route('articulosInteresantes')}}">Articulos Interesantes</a>
                 </li>
             </ul>
         </div>
