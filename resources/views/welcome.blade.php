@@ -97,9 +97,9 @@
                 <div class="col-md-6"><br><br><br><br>
                     <img class="rounded mx-auto d-block" src="{{url('imagenes/doctor.png')}}" style="height:400px;width:400px; ">
                 </div>
-                <div class="col-md-4" style="background-color: black; opacity: 0.5;"><br><br><br><br>
+                <div class="col-md-4" style="background-color: rgba(0, 0, 0, 0.5);color:white;"><br><br><br><br>
                     <h1>Hola, soy Cooper</h1>
-                    <h3>Mi trabajo es ayudar a identificar cualquier síntoma médico que puedas tener y mantenerte saludable.</h3>
+                    <h3>Mi trabajo es ayudar a identificar cualquier síntoma médico sobre el Covid-19 que puedas tener y mantenerte saludable.</h3>
                 </div>
 {{--            </div>--}}
         </div>
