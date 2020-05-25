@@ -62,10 +62,14 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .navbar {
+                min-height: 80px;
+            }
 
         </style>
     </head>
-    <body style=" background-color: lightgrey;">
+    <body  background="{{url('imagenes/fondo.png')}}" style=" background-color: #ECE0E0;">
+    <div class="">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">COOPER</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,16 +90,16 @@
             </ul>
         </div>
     </nav>
+    </div>
     <div id ="pagina">
         <div class="row">
 {{--            <div class="container">--}}
-                <div class="col-md-6"><br><br><br>
-                    <img class="rounded mx-auto d-block" src="{{url('imagenes/doctor.png')}}" alt="">
+                <div class="col-md-6"><br><br><br><br>
+                    <img class="rounded mx-auto d-block" src="{{url('imagenes/doctor.png')}}" style="height:400px;width:400px; ">
                 </div>
-                <div class="col-md-6">
-                    <h1>
-                        Hello
-                    </h1>
+                <div class="col-md-4" style="background-color: black; opacity: 0.5;"><br><br><br><br>
+                    <h1>Hola, soy Cooper</h1>
+                    <h3>Mi trabajo es ayudar a identificar cualquier síntoma médico que puedas tener y mantenerte saludable.</h3>
                 </div>
 {{--            </div>--}}
         </div>
