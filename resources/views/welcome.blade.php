@@ -71,7 +71,7 @@
     <body  background="{{url('imagenes/fondo.png')}}" style=" background-color: #ECE0E0;">
     <div class="">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">COOPER</a>
+        <a class="navbar-brand" href="#pagina">COOPER</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -79,10 +79,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#pagina">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Mas de mi</a>
+                    <a class="nav-link" href="#page2">Mas de mi</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="{{route('articulosInteresantes')}}">Articulos Interesantes</a>
@@ -97,9 +97,9 @@
                 <div class="col-md-6"><br><br><br><br>
                     <img class="rounded mx-auto d-block" src="{{url('imagenes/doctor.png')}}" style="height:400px;width:400px; ">
                 </div>
-                <div class="col-md-4" style="background-color: black; opacity: 0.5;"><br><br><br><br>
+                <div class="col-md-4" style="background-color: rgba(0, 0, 0, 0.5);color:white;"><br><br><br><br>
                     <h1>Hola, soy Cooper</h1>
-                    <h3>Mi trabajo es ayudar a identificar cualquier síntoma médico que puedas tener y mantenerte saludable.</h3>
+                    <h3>Mi trabajo es ayudar a identificar cualquier síntoma médico sobre el Covid-19 que puedas tener y mantenerte saludable.</h3>
                 </div>
 {{--            </div>--}}
         </div>
@@ -148,7 +148,20 @@
         </div>
     </div>
 
-    <main class="container-fluid">
+    <div>
+        <div class="row" id="page2">
+            {{--            <div class="container">--}}
+            <div class="col-md-6"><br><br><br><br>
+                <img class="rounded mx-auto d-block" src="{{url('imagenes/doctor.png')}}" style="height:400px;width:400px; ">
+            </div>
+            <div class="col-md-4" style="background-color: rgba(0, 0, 0, 0.5);color:white;"><br><br><br><br>
+                <h1>Hola, soy Cooper</h1>
+                <h3>Mi trabajo es ayudar a identificar cualquier síntoma médico sobre el Covid-19 que puedas tener y mantenerte saludable.</h3>
+            </div>
+            {{--            </div>--}}
+        </div>
+    </div>
+        <main class="container-fluid">
             @yield('content')
         </main>
     @yield('principal')
