@@ -71,7 +71,7 @@
 <body  background="{{url('imagenes/fondo2.png')}}" style=" background-color: #ECE0E0;">
 <div class="">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{{route('welcome')}}">COOPER</a>
+        <a class="navbar-brand" href="#">COOPER</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -82,7 +82,7 @@
                     <a class="nav-link" href="{{route('welcome')}}">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('masDeMi')}}">Mas de mi</a>
+                    <a class="nav-link" href="#">Mas de mi</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="{{route('articulosInteresantes')}}">Articulos Interesantes</a>
@@ -91,54 +91,26 @@
         </div>
     </nav>
 </div>
-<div id ="pagina" class="container"><br>
+<div id ="pagina">
     <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Bolivia Segura</h5>
-                    <p class="card-text">En este sitio web se puede encontrar información actualizada sobre la enfermedad, recomendaciones dirigidas a los distintos sectores de la población y las diferentes medidas para atender la pandemia y sus efectos.</p>
-                    <a href="https://www.boliviasegura.gob.bo" class="btn btn-primary">Ir a la Pagina</a>
-                </div>
-            </div>
+        <div class="col-md-6"><br><br><br><br>
+            <img class="rounded mx-auto d-block" src="{{url('imagenes/doctor.png')}}" style="height:400px;width:400px; ">
         </div>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">OMS</h5>
-                    <p class="card-text">Anuncio Oficial desde la Organización Mundial de la Salud sobre la COVID-19. Síntomas, Prevención, Advertencia de Viaje y Preguntas Frecuentes sobre la COVID-19. Cómo protegerse. Orientaciones Técnicas. Consejos e información. Preguntas y Respuestas.</p>
-                    <a href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019?gclid=CjwKCAjw2a32BRBXEiwAUcugiIPm1sP21_rP1iyaBq1niVQgMnl1f0yjrW0L_xPTGr0S_XMmzb2A_hoCKT8QAvD_BwE" class="btn btn-primary">Ir a la pagina</a>
-                </div>
-            </div>
-        </div>
-    </div><br>
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Verificar Noticias Fake</h5>
-                    <p class="card-text">Bolivia Verifica es un medio digital sin fines de lucro ni tendencia política que se dedica a la verificación de noticias falsas (fake news) y del discurso público para luchar contra la desinformación y mejorar la participación democrática.</p>
-                    <a href="https://boliviaverifica.bo/" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+        <div class="col-md-4" style="background-color: rgba(0, 0, 0, 0.5);color:white;"><br><br><br><br>
+            <br><br>
+            <h3>¿Aun no me conoces?</h3><br>
+            <h5>Me llamo Cooper, y soy un chatbot dotado con inteligencia artificial.
+               Mis instructoras me han enseñado a identificar todos los sintomas relacionados con el Covid-19.
+               Si necesitas respuestas, ¡no dudes en preguntarme!.
+            </h5>
         </div>
     </div>
+
 </div>
 
 <main class="container-fluid">
     @yield('content')
 </main>
-
-
 </body>
 </html>
 
