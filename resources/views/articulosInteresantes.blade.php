@@ -116,9 +116,9 @@
         <div class="col-sm-6">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Verificar Noticias Fake</h5>
+                    <p class="card-text">Bolivia Verifica es un medio digital sin fines de lucro ni tendencia política que se dedica a la verificación de noticias falsas (fake news) y del discurso público para luchar contra la desinformación y mejorar la participación democrática.</p>
+                    <a href="https://boliviaverifica.bo/" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
