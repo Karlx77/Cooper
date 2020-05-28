@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/articulosInteresantes', 'InicioController@articulos')->name('articulosInteresantes');
+Route::get('/masDeMi', 'InicioController@informacion')->name('masDeMi');
